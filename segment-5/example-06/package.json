@@ -1,0 +1,26 @@
+{
+  "name": "virtual-golem",
+  "description": "Who doesn't want a clay automoton who will do your bidding?",
+  "author": "Ethan Brown <e@zepln.com>",
+  "contributors": [
+    "Ethan Brown <e@zepln.com>"
+  ],
+  "main": "dist/Golem.js",
+  "version": "1.0.0",
+  "keywords": [
+    "golem",
+    "example"
+  ],
+  "license": "(MIT OR GPL-3.0)",
+  "scripts": {
+    "test": "jest",
+    "dist": "babel src --out-dir dist --source-maps"
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-env": "^1.5.1"
+  },
+  "devDependencies": {
+    "jest": "^20.0.4"
+  }
+}
