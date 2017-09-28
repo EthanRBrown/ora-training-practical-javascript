@@ -16,7 +16,7 @@ function createCar() {
     stop() {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
-          this.state.ignition = 'on'
+          this.state.ignition = 'off'
           resolve()
         }, 50)
       })
