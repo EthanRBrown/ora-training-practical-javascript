@@ -1,4 +1,4 @@
-const fn = require('../exercise-02.js')
+const fn = require('../exercise-03.js')
 
 jasmine.DEFAULT_TIMEOUT_INTERVAL = 5
 
