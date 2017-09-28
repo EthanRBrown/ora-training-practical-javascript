@@ -7,7 +7,21 @@ test('function returns promise', () => {
 })
 
 test('function returns promise that resolves if the argument is "green"', done => {
-  fn("green").then(val => {
+  fn("green")
+    .then(() => {
+      done()
+    })
+    .catch(() => {
+      new Error('Promise SHOULD be resolved!')
+    })
+})
+
+test('function returns promise that rejects if the argument is "red"', done => {
+  fn("red")
+  .then(() => {
+    new Error('Promise should NOT be resolved!')
+  })
+  .catch(() => {
     done()
   })
 })
